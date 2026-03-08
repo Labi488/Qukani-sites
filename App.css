@@ -1,0 +1,53 @@
+/* Sanftes Scrollen, wenn man auf Links klickt */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Die gelbe Markierungsfarbe beim Text-Markieren */
+::selection {
+  background-color: #facc15;
+  color: black;
+}
+
+/* Stellt sicher, dass die Seite immer die volle Höhe nutzt */
+#root {
+  min-height: 100vh;
+}
+
+/* Animation für den "Hüpfen"-Effekt (falls genutzt) */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%) translateX(-50%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0) translateX(-50%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Weiche Übergänge für Buttons und Links */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Animation für das Handy-Menü */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-testid="mobile-menu"] {
+  animation: slideDown 0.2s ease-out;
+}
+
