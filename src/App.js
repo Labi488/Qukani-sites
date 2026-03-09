@@ -170,7 +170,7 @@ const LandingPage = () => {
                 <div>
                   {/* Schrift dünkler gemacht (text-[#1a1a1a]) */}
                   <p className="text-[11px] font-bold text-[#1a1a1a] uppercase tracking-[0.15em] mb-1">Instagram</p>
-                  <p className="text-xl font-bold group-hover:text-yellow-600 transition-colors">@qukani_markierungen</p>
+                  <p className="text-xl font-bold group-hover:text-yellow-600 transition-colors">@strassenmarkierungen_qukani</p>
                 </div>
               </a>
             </div>
